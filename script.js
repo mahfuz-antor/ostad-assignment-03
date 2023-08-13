@@ -22,6 +22,21 @@ printObjectProperties(person);
 // ****** Task-01 End *******
 
 // ****** Task-2) javascript function returns *******
+function findMaxNumber(numArray) {
+  if (numArray.length === 0) {
+    return null;
+  }
+  let maxNum = numArray[0];
+  for (let i = 1; i < numArray.length; i++) {
+    if (numArray[i] > maxNum) {
+      maxNum = numArray[i];
+    }
+  }
+  return maxNum;
+}
+
+const numbers1 = [10, 20, 5, 30, 25];
+console.log(findMaxNumber(numbers1));
 
 // ****** Task-02 End *******
 
