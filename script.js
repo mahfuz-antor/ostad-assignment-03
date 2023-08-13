@@ -52,6 +52,11 @@ console.log(mergeArrays(arr1, arr2));
 // ****** Task-03 End *******
 
 // ****** Task-4) javascript arrow function *******
+const calculateSquare = (num) => {
+  let square = num * num;
+  return square;
+};
+console.log(calculateSquare(8));
 
 // ****** Task-04 End *******
 
