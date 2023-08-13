@@ -73,6 +73,13 @@ doubleNumbers(numbers);
 // ****** Task-05 End *******
 
 // ****** Task-6) javascript es6 static keyword *******
+class MathUtility {
+  static multiply(num1, num2) {
+    return num1 * num2;
+  }
+}
+
+console.log(MathUtility.multiply(2, 8));
 
 // ****** Task-06 End *******
 
