@@ -103,12 +103,48 @@ class Dog extends Animal {
 
 const animal = new Animal("Lion", "Roar");
 
-animal.makeSound(); // Output: "Roar"
+animal.makeSound();
 
 const dog = new Dog("Buddy", "Woof");
 
-dog.makeSound(); // Output: "Woof"
+dog.makeSound();
 
 dog.fetch();
 
 // ****** Task-07 End *******
+
+// ****** Task- 8) javascript es6 super keyword ******
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  introduce() {
+    console.log(
+      `Hello, my name is ${this.name} and I am ${this.age} years old.`
+    );
+  }
+}
+
+class Student extends Person {
+  constructor(name, age, major) {
+    super(name, age);
+    this.major = major;
+  }
+  introduce() {
+    super.introduce();
+    console.log(`I am majoring in ${this.major}.`);
+  }
+}
+// Person method calling
+const person1 = new Person("John", 30);
+
+person1.introduce();
+
+// subclass method calling
+const student1 = new Student("Alice", 20, "Computer Science");
+
+student1.introduce();
+
+// ****** Task-08 End *******
