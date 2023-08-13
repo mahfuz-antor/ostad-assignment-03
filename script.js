@@ -61,6 +61,14 @@ console.log(calculateSquare(8));
 // ****** Task-04 End *******
 
 // ****** Task-5) javascript es6 map *******
+let doubleNumbers = (numbers) => {
+  numbers.map((num) => {
+    console.log(num * 2);
+  });
+};
+let numbers = [1, 2, 3, 4, 5];
+
+doubleNumbers(numbers);
 
 // ****** Task-05 End *******
 
