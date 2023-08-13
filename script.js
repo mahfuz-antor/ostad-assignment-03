@@ -41,6 +41,13 @@ console.log(findMaxNumber(numbers1));
 // ****** Task-02 End *******
 
 // ****** Task-3) javascript Spread Operator *******
+function mergeArrays(arr1, arr2) {
+  let mergeArr = [...arr1, ...arr2];
+  return mergeArr;
+}
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+console.log(mergeArrays(arr1, arr2));
 
 // ****** Task-03 End *******
 
